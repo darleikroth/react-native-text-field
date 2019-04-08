@@ -1,6 +1,6 @@
 {
   "name": "@iume/react-native-text-field",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React native component with custom TextInput element",
   "main": "src/textfield.js",
   "scripts": {
