@@ -52,7 +52,7 @@ interface Props extends TextInputProperties {
   /**
    * Render an element at right side.
    */
-  elementRight?: React.ReactNode;
+  elementRight?: JSX.Element;
   /**
    * Disables the element.
    */
