@@ -111,7 +111,7 @@ export default class TextField extends React.PureComponent<Props> {
   }
 
   getTextStyle = () => {
-    const textStyle = this.props.style
+    const textStyle = this.props.style || {}
     if (!this.props.value) {
       textStyle.color = this.props.placeholderTextColor
     }
@@ -180,13 +180,13 @@ const baseContainer = {
 const styles = StyleSheet.create({
   inputContainer: {
     ...baseContainer,
-    paddingVertical: IOS ? 9 : undefined,
-    paddingHorizontal: IOS ? 4 : undefined,
+    paddingVertical: IOS ? 9 : 8,
+    paddingHorizontal: 4
   },
   fieldContainer: {
     ...baseContainer,
     paddingVertical: IOS ? 9 : 11,
-    paddingHorizontal: 4,
+    paddingHorizontal: 4
   },
   right: {
     flex: 0,
